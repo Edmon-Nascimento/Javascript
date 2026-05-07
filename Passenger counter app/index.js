@@ -1,9 +1,16 @@
 let count = 0
-const countTxt = document.getElementById("count-el")
-
-const increamentBtn = document.getElementById("increment-btn")
+const countEl = document.getElementById("count-el")
+const saveEl = document.getElementById("save-el")
 
 function incrementCount(){
     count++
-    countTxt.innerText = count
+    countEl.textContent = count
+}
+
+function save(){
+    const saveCount = " " + count + " - "
+    saveEl.textContent += saveCount
+    count = 0
+    countEl.textContent = count
+    console.log(count)
 }
