@@ -1,5 +1,5 @@
-let firstCard = Math.floor(Math.random() * 11) + 1;
-let secondCard = Math.floor(Math.random() * 11) + 1;
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 
 let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
@@ -43,10 +43,14 @@ function renderGame() {
 }
 
 function drawNewCard() {
-  let newCard = Math.floor(Math.random() * 11) + 1;
+  let newCard = getRandomCard()
   cards.push(newCard);
   sum += newCard
   renderGame();
+}
+
+function getRandomCard(){
+  return Math.floor(Math.random() * 11) + 1;
 }
 
 function restartGame() {
