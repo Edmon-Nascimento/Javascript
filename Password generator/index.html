@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="assets/lock-solid-full.svg" alt="" />
+      <h1>PASSWORD GENERATOR</h1>
+      <div class="password-wrapper">
+        <p class="password" id="txt-password"></p>
+        <div class="btn-wrapper">
+          <button id="btn-copy">
+            <img src="assets/copy-regular-full.svg" alt="" />
+            copy
+          </button>
+          <button id="btn-generate">
+            <img src="assets/repeat-solid-full.svg" alt="" />
+            generate
+          </button>
+        </div>
+      </div>
+
+      <section class="password-options">
+        <div>
+          <label for="length">Password Length</label>
+          <input type="range" id="length" min="8" max="15" step="1" value="8" />
+          <span id="length-display">8</span>
+        </div>
+        <div>
+          <label for="uppercase">Include Uppercase (A-Z)</label>
+          <input type="checkbox" id="uppercase" />
+        </div>
+
+        <div>
+          <label for="numbers">Inclue Numbers(0-9)</label>
+          <input type="checkbox" id="numbers" />
+        </div>
+
+        <div>
+          <label for="symbols">Include Symbols(@#$%)</label>
+          <input type="checkbox" id="symbols" />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #111827;
+}
+
+main {
+  width: min(100%, 500px);
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.logo {
+  width: 70px;
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #1f2937;
+}
+
+.password-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.password {
+  width: 100%;
+  min-height: 65px;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-family: monospace;
+  letter-spacing: 2px;
+  word-break: break-all;
+}
+
+.btn-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  flex: 1;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button img {
+  width: 18px;
+}
+
+#btn-copy {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+#btn-generate {
+  background: #6366f1;
+  color: white;
+}
+
+
+#btn-copy:hover {
+  background: #e5e7eb;
+}
+
+#btn-generate:hover {
+  background: #4f46e5;
+}
+
+.password-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.password-options div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+label {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 120px;
+  accent-color: #6366f1;
+}
+
+#length-display {
+  font-weight: 700;
+  color: #6366f1;
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 2rem 1.25rem;
+  }
+
+  .btn-wrapper {
+    flex-direction: column;
+  }
+
+  .password-options div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  input[type="range"] {
+    width: 100%;
+  }
+}
