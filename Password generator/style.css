@@ -149,12 +149,7 @@ input[type="range"] {
     padding: 2rem 1.25rem;
   }
 
-  .btn-wrapper {
-    flex-direction: column;
-  }
-
   .password-options div {
-    flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
